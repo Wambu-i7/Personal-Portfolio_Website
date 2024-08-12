@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<title> My Porfolio </title>
+		<link rel="styleshet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+    				<div class="container">
+        				<a href="#home" class="logo">MyPortfolio</a>
+        				<ul class="nav-links">
+            					<li><a href="#home">Home</a></li>
+            					<li><a href="#about">About</a></li>
+            					<li><a href="#projects">Projects</a></li>
+            					<li><a href="#contact">Contact</a></li>
+        				</ul>
+        				<div class="menu-toggle" id="mobile-menu">
+            					<span class="bar"></span>
+            					<span class="bar"></span>
+            					<span class="bar"></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section id="hero">
+			<div class="hero-container">
+				<image src="profile.jpg" alt="Hero Image" class="hero-image">
+				<div class="hero-text">
+					<h1>Welcome to My Porfolio</h1>
+					<p>Creating innovative solutions one project at a time.</p>
+					<a href="#projects" class="btn">View My Work</a>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<h2>Hi! I am Rose Ndikiru</h2>
+			<p>I am a Front End Web Developer.</p>
+			<p>I love creating beautiful websites.</p>
+			<p> I love what I do!</p>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project">
+				<h3>Unix like Shell.</h3>
+				<p>Creating a unix Command interpreter using the C language.</p>
+				<p>Creating the shell in both interactive and non-interactive mode.</p>
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form action="submit_form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+		<footer>
+			<p>&copy; 2024 Rose Ndikiru. All rights reserved.</p>
+		</footer>
+	<script>
+		const mobileMenu = document.getElementById("mobile-menu");
+		const navLinks = document.querySelector(".nav-links");
+		
+		mobileMenu.addEventListener("click", () => {
+			navLinks.clasList.toggle("active");
+		}};
+	</script>
+
+	</body>
+</html>
